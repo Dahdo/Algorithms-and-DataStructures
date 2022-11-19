@@ -1,0 +1,1 @@
+doTheWork(map, x, y, k, n, indexedXs, indexedYs, indexedCount);
