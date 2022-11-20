@@ -1,14 +1,14 @@
 //
-// Created by daniel on 19.11.22.
+// Created by daniel on 20.11.22.
 //
 #include <iostream>
 #include "Graph.h"
 #include "Graph.cpp"
-#include <queue>
+#include <stack>
 
 using namespace std;
 
- vector<int> BSF(int start, vector<vector<int>> adj)
+vector<int> DSF(int start, vector<vector<int>> adj)
 {
     size_t size = adj.size();
     vector<int> visitedIndices;
@@ -18,13 +18,13 @@ using namespace std;
     {
         if(!visited[i] && !adj[i].empty())
         {
-            queue<int> toTraverse;
+            stack<int> toTraverse;
             visited[i] = true;
             toTraverse.push(i);
 
             while(!toTraverse.empty())
             {
-                int currentVertIndex = toTraverse.front();
+                int currentVertIndex = toTraverse.top();
                 toTraverse.pop();
                 visitedIndices.push_back(currentVertIndex);
 
@@ -65,9 +65,8 @@ int main()
     g.addEdge(11, 13);
 
 
-
-int j = 1;
-    for(int i : BSF(2, g.getAdj()))
+    int j = 1;
+    for(int i : DSF(2, g.getAdj()))
         cout << j++ << ". "<< i << " " << endl;
 
 }

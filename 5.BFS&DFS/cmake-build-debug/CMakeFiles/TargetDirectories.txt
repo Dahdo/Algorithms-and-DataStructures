@@ -1,0 +1,3 @@
+/home/daniel/Desktop/ads/5.BFS&DFS/cmake-build-debug/CMakeFiles/5_BFS_DFS.dir
+/home/daniel/Desktop/ads/5.BFS&DFS/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/daniel/Desktop/ads/5.BFS&DFS/cmake-build-debug/CMakeFiles/rebuild_cache.dir
