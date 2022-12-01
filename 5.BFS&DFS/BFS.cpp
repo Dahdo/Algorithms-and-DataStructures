@@ -1,3 +1,4 @@
+
 //
 // Created by daniel on 19.11.22.
 //
@@ -8,7 +9,7 @@
 
 using namespace std;
 
- vector<int> BSF(int start, vector<vector<int>> adj)
+vector<int> BSF(int start, vector<vector<int>> adj)
 {
     size_t size = adj.size();
     vector<int> visitedIndices;
@@ -66,7 +67,7 @@ int main()
 
 
 
-int j = 1;
+    int j = 1;
     for(int i : BSF(2, g.getAdj()))
         cout << j++ << ". "<< i << " " << endl;
 
